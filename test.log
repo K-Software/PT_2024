@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.29)  13 FEB 2025 23:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.29)  14 FEB 2025 17:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -396,16 +396,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 181--183
 
  []
 
+LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 202.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 202.
 
-Overfull \hbox (128.70026pt too wide) in paragraph at lines 195--197
-\OT1/cmtt/m/n/12 <SCRIPT>function test()fetch('TEST.txt').then(response => response.text()).then(data
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 202.
+
+
+Overfull \hbox (52.92491pt too wide) in paragraph at lines 199--203
+\OT1/cmtt/m/n/12 then(response => response.text()).then(data => alert(data))\OMS/cmtt/m/n/12 g\OT1/cmtt/m/n/12 test(); 
  []
 
-[6] (test.aux)
+
+Overfull \hbox (3.69987pt too wide) in paragraph at lines 203--205
+\OT1/cmtt/m/n/12 ' or null is null INTO OUTFILE '/var/www/html/USERS.txt' # 
+ []
+
+
+Overfull \hbox (43.46689pt too wide) in paragraph at lines 205--210
+\OT1/cmtt/m/n/12 ' or null is not null UNION SELECT null, TABLE[]NAME, TABLE[]SCHEMA 
+ []
+
+
+Overfull \hbox (72.6129pt too wide) in paragraph at lines 205--210
+\OT1/cmtt/m/n/12 'information[]schema' AND TABLE[]SCHEMA not like 'mysql' AND TABLE[]SCHEMA 
+ []
+
+
+Overfull \hbox (63.7209pt too wide) in paragraph at lines 205--210
+\OT1/cmtt/m/n/12 not like 'performance[]schema' INTO OUTFILE '/var/www/html/TABLES.txt'
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 212--215
+
+ []
+
+<USERS.png, id=160, 457.71pt x 251.94125pt>
+File: USERS.png Graphic file (type png)
+<use USERS.png>
+Package pdftex.def Info: USERS.png  used on input line 217.
+(pdftex.def)             Requested size: 366.1685pt x 201.55327pt.
+<TABLES.png, id=162, 457.71pt x 191.71625pt>
+File: TABLES.png Graphic file (type png)
+<use TABLES.png>
+Package pdftex.def Info: TABLES.png  used on input line 222.
+(pdftex.def)             Requested size: 366.1685pt x 153.3732pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./USERS.png>] [8 <./TABLES.png>] (test.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -414,17 +462,17 @@ Package rerunfilecheck Info: File `test.out' has not changed.
 (rerunfilecheck)             Checksum: F046523578643D48F7EF811A82679C95;775.
  ) 
 Here is how much of TeX's memory you used:
- 11823 strings out of 474587
- 182646 string characters out of 5731584
+ 11857 strings out of 474587
+ 183137 string characters out of 5731584
  1993555 words of memory out of 5000000
- 33770 multiletter control sequences out of 15000+600000
- 563927 words of font info for 58 fonts, out of 8000000 for 9000
+ 33797 multiletter control sequences out of 15000+600000
+ 564184 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,313b,2048s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0600.pk> </Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on test.pdf (6 pages, 131976 bytes).
+ 75i,7n,79p,313b,2048s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0600.pk> </Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on test.pdf (8 pages, 166475 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 102 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 244 PDF objects out of 1000 (max. 8388607)
+ 109 named destinations out of 1000 (max. 500000)
+ 59 words of extra memory for PDF output out of 10000 (max. 10000000)
 

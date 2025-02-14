@@ -22,15 +22,146 @@
 \newpage
 
 \section{Executive Summary}
-\dots
+
+Questo rapporto descrive i risultati di un penetration test condotto su un 
+\textbf{container Docker}, identificato con l'indirizzo IP 172.19.0.3. Il test, 
+effettuato in data 8 Febbraio 2025, aveva lo scopo di valutare la sicurezza del 
+sistema e identificare potenziali vulnerabilit\`{a} sfruttabili. Le principali scoperte 
+includono la presenza di una \textbf{vulnerabilit\`{a} di SQL Injection} nella procedura 
+di login e una \textbf{vulnerabilit\`{a} di Cross-Site Scripting (XSS)} nella procedura 
+di recupero password.
 
 \section{Methodology Used}
-\dots
+\begin{itemize}
+    \item \textbf{Definizione dello Scopo del Test:} Il test \`{e} stato eseguito su 
+    un singolo container Docker, identificato dall'indirizzo IP 172.19.0.3. Non 
+    \`{e} stata necessaria alcuna fase di raccolta di informazioni preliminare 
+    poich\`{e} l'ambiente era preconfigurato.
+    \item \textbf{Scansione della Rete:} La scansione di rete \`{e} stata eseguita 
+    utilizzando \texttt{nmap} per identificare i servizi attivi. \`{E} stata condotta una 
+    scansione ICMP/Ping di livello 3 e una scansione TCP SYN di livello 4.
+    \item \textbf{Enumerazione:} Dopo la scansione, \`{e} stato effettuato il banner 
+    grabbing tramite \texttt{nmap} e \texttt{telnet} per identificare il sistema 
+    operativo e il web server. \`{E} stata eseguita una verifica per l'enumerazione 
+    UserDir, risultata non attiva.
+    \item \textbf{Valutazione delle Vulnerabilit\`{a}:} La valutazione delle 
+    vulnerabilit\`{a} \`{e} stata condotta identificando manualmente la SQL Injection 
+    nella procedura di login e la XSS nella procedura di password recovery.
+    \item \textbf{Sfruttamento (Exploitation):} Sono state create delle Proof of 
+    Concept (PoC) per le vulnerabilit\`{a} identificate, dimostrando la 
+    possibilit\`{a} di sfruttarle.
+    \item \textbf{Post-Sfruttamento:} Sono stati identificati script e query per 
+    mantenere l'accesso e raccogliere dati, simulando le azioni di un attaccante 
+    in una fase di post-exploitation.
+    \item \textbf{Strumenti Utilizzati:} \texttt{nmap}, \texttt{telnet} e \texttt{Metasploit} 
+    (per l'enumerazione UserDir, anche se il modulo non ha fornito risultati).
+\end{itemize}
 
 \section{Findings}
-\dots
+\begin{itemize}
+    \item \textbf{Sistema Operativo:} Linux 4.15 - 5.8.
+    \item \textbf{Web Server:} Apache/2.4.38 (Debian).
+    \item \textbf{PHP:} PHP/7.2.34.
+    \item \textbf{UserDir:} Il modulo \texttt{mod\_userdir} non \`{e} attivo sul 
+    web server.
+    \item \textbf{Vulnerabilit\`{a} di SQL Injection:}
+    \begin{itemize}
+        \item \textbf{Descrizione:} \`{E} presente una vulnerabilit\`{a} di SQL 
+        Injection nella procedura di login che permette di manipolare la query 
+        eseguita per il controllo delle credenziali. Inserendo un apice singolo 
+        (') nel campo username, \`{e} possibile iniettare comandi SQL arbitrari.
+        \item \textbf{Livello di Rischio:} Alto. La SQL Injection permette di 
+        bypassare l'autenticazione e di recuperare informazioni dal database.
+        \item \textbf{Proof of Concept (PoC):}
+        \begin{enumerate}
+            \item \textbf{Username:} \texttt{' OR null is null limit 1 \#}\\
+            \textbf{Paswword:} Qualsiasi valore
+            \item \textbf{Username:} \texttt{' UNION SELECT null, null, user() \#}\\
+            \textbf{Password:} Qualsiasi valore
+        \end{enumerate}
+        Questi PoC dimostrano che \`{e} possibile manipolare la query SQL, ottenendo 
+        informazioni sul database o bypassando l'autenticazione.
+        \item \textbf{Evidenze:} Messaggio di errore SQL: \texttt{Notice: Invalid query: 
+        You have an error in your SQL syntax; check the manual that corresponds 
+        to your MariaDB server version for the right syntax to use near 
+        'c9c35cf409344312146fa7546a94d1a6' at line 1 in /var/www/html/login.php 
+        on line 63} viene mostrato quando viene inserito un apice singolo nel 
+        campo username.
+    \end{itemize}
+    \item \textbf{Vulnerabilit\`{a}' di XSS:}
+    \begin{itemize}
+        \item \textbf{Descrizione:} \`{E} presente una vulnerabilit\`{a} di Cross-Site 
+        Scripting (XSS) nella procedura di password recovery. Inserendo codice 
+        JavaScript nel campo \textbf{Email address} \`{e} possibile eseguire codice 
+        arbitrario nel browser dell'utente.
+        \item \textbf{Livello di Rischio:} Medio. Permette l'esecuzione di codice 
+        arbitrario nel browser dell'utente e potenzialmente il furto di cookie e 
+        sessioni.
+        \item \textbf{Proof of Concept (PoC):}
+        \begin{enumerate}
+            \item \textbf{Email address:} \texttt{<SCRIPT>alert('Hello')</SCRIPT>}
+            \item \textbf{Email address:} \texttt{<IMG SRC="pic/1.jpg">}
+        \end{enumerate}
+        Questi PoC dimostrano la possibilit\`{a} di iniettare codice JavaScript nel 
+        campo email.
+        \item \textbf{Evidenze:} L'esecuzione di codice JavaScript tramite il 
+        campo dell'email e i payload specificati dimostrano la vulnerabilit\`{a} XSS.
+    \end{itemize}
+\end{itemize}
 
 \section{Remediation Plan}
-\dots
+\begin{itemize}
+    \item \textbf{SQL Injection:}
+    \begin{itemize}
+        \item \textbf{Patch:} Utilizzare query parametrizzate (prepared statements) 
+        per evitare che l'input dell'utente venga interpretato come codice SQL.
+        \item \textbf{Mitigazione:} Implementare la validazione degli input per 
+        impedire l'inserimento di caratteri speciali come l'apice singolo nelle 
+        query SQL.
+    \end{itemize}
+    \item \textbf{XSS:}
+    \begin{itemize}
+        \item \textbf{Patch:} Implementare la sanificazione dell'input per rimuovere 
+        o codificare i tag HTML che possono eseguire script.
+        \item \textbf{Mitigazione:} Utilizzare Content Security Policy (CSP) per 
+        limitare le fonti da cui il browser pu\`{o} caricare risorse.
+    \end{itemize}
+    \item \textbf{Misure aggiuntive:}
+    \begin{itemize}
+        \item Aggiornare regolarmente il sistema operativo, il server web e tutte 
+        le applicazioni in uso per applicare le patch di sicurezza pi\`{u} recenti.
+        \item Disabilitare o proteggere l'accesso a servizi non necessari.
+        \item Implementare un firewall per limitare gli accessi non autorizzati.
+    \end{itemize}
+\end{itemize}
+
+\section{Post-Exploitation (simulato)}
+
+Sono stati identificati i seguenti script/query come esempio delle attivit\`{a} 
+di un attaccante in una fase di post-exploitation:
+
+\begin{itemize}
+    \item Script per visuaizzare un file del server:\\
+    \texttt{<SCRIPT>function test()\{fetch('TEST.txt').\\
+    then(response => response.text()).then(data => alert(data))\}test(); \\
+    </SCRIPT>}
+    \item SQLi per recuperare l'elenco degli users/customers:\\
+    \texttt{' or null is null INTO OUTFILE '/var/www/html/USERS.txt' \#}
+    \item SQLi per recuperare l'elenco delle tabelle del db: \\
+    \texttt{' or null is not null UNION SELECT null, TABLE\_NAME, TABLE\_SCHEMA \\ 
+    FROM information\_schema.TABLES WHERE TABLE\_SCHEMA not like \\
+    'information\_schema' AND TABLE\_SCHEMA not like 'mysql' AND TABLE\_SCHEMA \\
+    not like 'performance\_schema' INTO OUTFILE '/var/www/html/TABLES.txt' \#}
+\end{itemize}
+
+Questi script dimostrano come un attaccante pu\`{o} accedere a file e informazioni 
+dal database, utilizzando le vulnerabilit\`{a} SQLi e XSS.
+
+\section{Conclusioni}
+
+Questo rapporto evidenzia la presenza di vulnerabilit\`{a} critiche che richiedono 
+immediata attenzione. Implementando le patch e le mitigazioni suggerite, la sicurezza 
+del sistema pu\`{o} essere notevolmente migliorata.
+
 
 \end{document}

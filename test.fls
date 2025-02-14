@@ -173,6 +173,21 @@ INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmti12.tfm
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmtt12.tfm
+INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy10.tfm
+INPUT ./USERS.png
+INPUT ./USERS.png
+INPUT ./USERS.png
+INPUT ./USERS.png
+INPUT ./USERS.png
+INPUT ./USERS.png
+INPUT ./USERS.png
+INPUT ./TABLES.png
+INPUT ./TABLES.png
+INPUT ./TABLES.png
+INPUT ./TABLES.png
+INPUT ./TABLES.png
+INPUT ./TABLES.png
+INPUT ./TABLES.png
 INPUT test.aux
 INPUT ./test.out
 INPUT ./test.out
@@ -188,6 +203,8 @@ INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb
+INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb

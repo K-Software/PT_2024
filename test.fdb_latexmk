@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1739486195 "/Users/simonecappabianca/Documents/University/PT_2024/test.tex" "test.pdf" "test" 1739486195 0
-  "/Users/simonecappabianca/Documents/University/PT_2024/test.tex" 1739486194 7564 959e179df5557039a51c83dae904817c ""
+["pdflatex"] 1739549011 "/Users/simonecappabianca/Documents/University/PT_2024/test.tex" "test.pdf" "test" 1739549012 0
+  "/Users/simonecappabianca/Documents/University/PT_2024/test.tex" 1739549009 8682 a0238810389f3849ce53634acc4fe1f1 ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map" 1701290132 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0600.pk" 1739035855 7284 72fae22888d78a11043409b12887b1d5 ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1690133049 14064 f08d5dc044d626e3fae659faefd6975b ""
@@ -26,6 +26,7 @@
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1690132443 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1690132443 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1690132443 32734 69e00a6b65cedb993666e42eedb3d48f ""
+  "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1690132443 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1690132443 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1690132443 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb" 1690132443 24252 1e4e051947e12dfb50fee0b7f4e26e3a ""
@@ -88,10 +89,12 @@
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1690133041 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty" 1690132456 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty" 1701290129 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "test.aux" 1739486195 1153 42b7b48424ac46cff119b1a3df72f6ae "pdflatex"
-  "test.out" 1739486195 775 f046523578643d48f7ef811a82679c95 "pdflatex"
-  "test.tex" 1739486194 7564 959e179df5557039a51c83dae904817c ""
-  "test.toc" 1739486195 437 96fc281ccce202e331514fa8f84c9ad8 "pdflatex"
+  "TABLES.png" 1739540668 16869 b935346e736578e08cac15a9dac1d353 ""
+  "USERS.png" 1739540688 21018 6412adac2f8b26e309961d2aadde57f6 ""
+  "test.aux" 1739549011 1411 6d9dc7c1009fc58299643cbd0efd3f2c "pdflatex"
+  "test.out" 1739549011 775 f046523578643d48f7ef811a82679c95 "pdflatex"
+  "test.tex" 1739549009 8682 a0238810389f3849ce53634acc4fe1f1 ""
+  "test.toc" 1739549011 437 96fc281ccce202e331514fa8f84c9ad8 "pdflatex"
   (generated)
   "test.aux"
   "test.log"
