@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1740059953 "/Users/simonecappabianca/Documents/University/PT_2024/breafing.tex" "breafing.pdf" "breafing" 1740059953 0
-  "/Users/simonecappabianca/Documents/University/PT_2024/breafing.tex" 1740059952 12084 eaa478d86d3bb1318dd8e9cc1a83500c ""
+["pdflatex"] 1740066052 "/Users/simonecappabianca/Documents/University/PT_2024/breafing.tex" "breafing.pdf" "breafing" 1740066053 0
+  "/Users/simonecappabianca/Documents/University/PT_2024/breafing.tex" 1740066051 14085 caa6571cf2024e6c5337a07beaad59d7 ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map" 1701290132 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1690133049 14064 f08d5dc044d626e3fae659faefd6975b ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1701296043 24227245 47051c15f209c749ebf3a0b534348755 ""
@@ -16,9 +16,11 @@
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr12.tfm" 1690132450 1288 655e228510b4c2a1abe905c368440826 ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr17.tfm" 1690132450 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy10.tfm" 1690132450 1124 6c73e740cf17375f03eec0ee63599741 ""
+  "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmti12.tfm" 1690132450 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1690132443 32080 340ef9bf63678554ee606688e7b5339d ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1690132443 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1690132443 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1690132443 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii" 1690132454 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/generic/atbegshi/atbegshi.sty" 1690132443 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty" 1690133039 40635 c40361e206be584d448876bba8a64a3b ""
@@ -77,10 +79,10 @@
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1690133041 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty" 1690132456 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty" 1701290129 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "breafing.aux" 1740059953 870 c40149d8052a774808e5490d019a76e3 "pdflatex"
-  "breafing.out" 1740059953 895 23b3a744386e48d7d839fcfb27f3bab3 "pdflatex"
-  "breafing.tex" 1740059952 12084 eaa478d86d3bb1318dd8e9cc1a83500c ""
-  "breafing.toc" 1740059953 462 7c537a32d45a6bf64eaa15ddd8e3f4ed "pdflatex"
+  "breafing.aux" 1740066053 870 b98a40bd2f234a02ae907053fb5360a1 "pdflatex"
+  "breafing.out" 1740066053 895 23b3a744386e48d7d839fcfb27f3bab3 "pdflatex"
+  "breafing.tex" 1740066051 14085 caa6571cf2024e6c5337a07beaad59d7 ""
+  "breafing.toc" 1740066053 462 072f3d4eca3a778feb25747656ac4469 "pdflatex"
   (generated)
   "breafing.aux"
   "breafing.log"
