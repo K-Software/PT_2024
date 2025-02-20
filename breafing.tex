@@ -1,0 +1,285 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[latin1]{inputenc}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\title{Documento di sintesi PENETRATION TESTING 2024}
+\author{Simone Cappabianca - Mat: 5423306 \\  simone.cappabianca@edu.unifi.it}
+\date{Febbraio 8, 2025}
+
+\setlength{\parindent}{4em}
+\setlength{\parskip}{1em}
+
+\begin{document}
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+
+\section{Introduzione}
+
+Questo documento riassume i concetti chiave, le metodologie e gli strumenti 
+relativi al \textbf{penetration testing}, come delineato nei materiali del corso 
+forniti. Il corso si concentra sulla fornitura di una \textbf{comprensione pratica 
+dei principi dell'ethical hacking}, delle tecniche e della loro applicazione 
+nella protezione delle infrastrutture IT. Il materiale pone l'accento 
+sull'esperienza pratica all'interno di un ambiente di laboratorio controllato, 
+incoraggiando un approccio pratico all'apprendimento della sicurezza. Il corso 
+\`{e} tenuto dal professore associato Gabriele Costa presso IMT Lucca.
+
+\section{Panoramica del Corso}
+\begin{itemize}
+    \item \textbf{Materiale Didattico}: Il corso utilizza \textbf{slides e 
+    risorse open source} distribuite durante le lezioni. Gli studenti sono 
+    incoraggiati a segnalare eventuali errori nel materiale fornito.
+    \item \textbf{Configurazione del Laboratorio}: L'ambiente di laboratorio 
+    \`{e} essenziale per il corso. Gli studenti creano un \textbf{ambiente 
+    virtualizzato} usando strumenti come \text{VirtualBox, QEMU e Docker}. 
+    Questo permette di eseguire simulazioni in modo sicuro.
+    \item \textbf{Apprendimento Pratico}: Il corso enfatizza l'\textbf{esperienza 
+    pratica} tramite esercizi e laboratori.
+    \item \textbf{Coerenza Metodologica}: La metodologia per il penetration 
+    testing rimane la stessa indipendentemente dal tipo di azienda che viene 
+    valutata. 
+\end{itemize}
+
+\section{Temi Chiave}
+
+\begin{enumerate}
+    \item \textbf{Ethical Hacking e Penetration Testing}
+    \begin{itemize}
+        \item L'hacking \`{e}' definito come "riutilizzare la tecnologia in modi 
+        sorprendenti".
+        \item L'hacking in ambito sicurezza \`{e} un'attivit\`{a}' quotidiana 
+        per ruoli difensivi e offensivi.
+        \item L'enfasi \`{e} sull'utilizzo delle competenze di hacking per 
+        \textbf{scopi etici}, come il penetration testing.
+        \item Un \textbf{ethical hacker} non agisce mai di propria iniziativa, 
+        ma in accordo con il cliente.
+    \end{itemize}
+    \item \textbf{Metodologia del Penetration Test}
+    \begin{itemize}
+        \item Il corso delinea una \textbf{metodologia standard} di penetration 
+        testing che consiste nelle seguenti fasi:
+        \begin{enumerate}
+            \item Raccolta di informazioni.
+            \item Scansione della rete.
+            \item Enumerazione.
+            \item Valutazione delle vulnerabilità.
+            \item Sfruttamento.
+            \item Post-sfruttamento.
+            \item Rapporto finale.
+        \end{enumerate}
+        \item Il materiale sottolinea che il processo pu\`{o} essere adattato a 
+        seconda delle specifiche esigenze.
+    \end{itemize}
+    \item \textbf{Fondamenti di Networking}
+    \begin{itemize}
+        \item La comprensione dei concetti di rete \`{e} \textbf{fondamentale} 
+        per l'ethical hacking e la sicurezza informatica.
+        \item Il \textbf{modello ISO-OSI} \`{e} centrale per comprendere come 
+        le reti operano. (AGGIUNGERE il LIVELLI) 
+        \item Componenti chiave della rete:
+        \begin{itemize}
+            \item \textbf{Indirizzi MAC}: identificano univocamente i dispositivi 
+            in una LAN.
+            \item \textbf{Indirizzi IP}: identificano i dispositivi su una rete 
+            e sono usati per la comunicazione su reti IP; possono essere privati 
+            o pubblici.
+            \item \textbf{NAT}: traduce gli indirizzi IP privati in pubblici per 
+            l'accesso a Internet.
+            \item \textbf{DNS}: traduce i nomi di dominio in indirizzi IP.
+            \item \textbf{DHCP}: assegna automaticamente gli indirizzi IP.
+            \item \textbf{Porte e Servizi}: usate per stabilire connessioni con 
+            l'esterno e sono collegate ai servizi eseguiti su porte specifiche. 
+        \end{itemize}
+        \item Dispositivi di rete:
+        \begin{itemize}
+            \item \textbf{Switch}: operano all'interno di subnet usando indirizzi 
+            MAC.
+            \item \textbf{Router}: inoltrano pacchetti tra reti diverse usando 
+            indirizzi IP.
+            \item \textbf{Firewall}: proteggono la rete applicando policy di 
+            sicurezza.
+        \end{itemize}
+        \item Strumenti di analisi di rete:
+        \begin{itemize}
+            \item \textbf{Wireshark}: analizza il traffico di rete catturando 
+            pacchetti.
+            \item \textbf{ARP, PING, Traceroute}: identificano problemi di 
+            connettivit\`{a}. 
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Fasi del Penetration Testing in Dettaglio}
+    \begin{enumerate}
+        \item \textbf{Raccolta di Informazioni}:
+        \begin{itemize}
+            \item Raccogliere pi\`{u} informazioni possibili sull'obiettivo, 
+            dal business agli strumenti utilizzati.
+            \item Tecniche:
+            \begin{itemize}
+                \item \textbf{Google Dorking}: Utilizzo di operatori di ricerca 
+                specifici per trovare informazioni sensibili.
+                \item \textbf{Wayback Machine}: Per trovare dati storici.
+                \item \textbf{Analisi dei social media}: Per individuare perdite 
+                di informazioni.
+                \item \textbf{Estrazione di metadati}: Dai file.
+                \item \textbf{Query WHOIS}: Per informazioni sui domini.
+                \item \textbf{Query DNS}: Per la mappatura della rete.
+                \item \textbf{Maltego e Recon-ng}: Strumenti per automatizzare 
+                la raccolta dati.
+                \item \textbf{Shodan}: Per l'analisi delle vulnerabilit\`{a}.
+            \end{itemize} 
+        \end{itemize}
+        
+        \item \textbf{Scansione della Rete}:
+        \begin{itemize}
+            \item Identificare host attivi e porte aperte.
+            \item Tipi di scansione:
+            \begin{itemize}
+                \item \textbf{ARP Scanning}: per scoprire dispositivi nella LAN.
+                \item \textbf{ICMP/Ping Scanning}: per scoprire host e servizi attivi.
+                \item \textbf{TCP Scanning}: include TCP Connect e SYN scans.
+                \item \textbf{UDP Scanning}: identifica porte e servizi UDP aperti. 
+            \end{itemize}
+            \item Strumento: \textbf{Nmap}.
+        \end{itemize}
+        \item \textbf{Banner Grabbing}:
+        \begin{itemize}
+            \item Determinare il servizio e la versione in esecuzione su una 
+            porta specifica.
+            \item Metodi: \textbf{Telnet, Netcat, Nmap}.
+            \item Esempio HTTP: Utilizzo di comandi GET via Telnet.
+            \item Nmap Service Probes utilizza espressioni regolari per 
+            identificare servizi.
+        \end{itemize}
+        \item \textbf{Enumerazione}:
+        \begin{itemize}
+            \item Sfruttare le caratteristiche dei servizi per raccogliere 
+            informazioni.
+            \item Servizi comuni: 
+            \begin{itemize}
+                \item \textbf{SMTP},
+                \item \textbf{DNS},
+                \item \textbf{NETBIOS}.
+            \end{itemize}
+            \item Strumenti: 
+            \begin{itemize}
+                \item \textbf{script Nmap},
+                \item \textbf{moduli Metasploit}.
+            \end{itemize}
+        \end{itemize}
+        
+        \item \textbf{Valutazione delle Vulnerabilit\`{a}}:
+        \begin{itemize}
+            \item Identificare e analizzare le debolezze della sicurezza.
+            \item Metodi: 
+            \begin{itemize}
+                \item scanner automatici,
+                \item database di vulnerabilit\`{a},
+                \item  conoscenza del dominio.
+            \end{itemize}
+            \item Strumenti: 
+            \begin{itemize}
+                \item \textbf{Nessus},
+                \item \textbf{Nexpose},
+                \item \textbf{OpenVAS},
+                \item \textbf{OWASP ZAP}.
+            \end{itemize}
+            \item Tipi di vulnerabilit\`{a}':
+            \begin{itemize}
+                \item \textbf{Cross-Site Scripting (XSS)}: sfrutta l'input 
+                dell'utente per iniettare script malevoli.
+                \item \textbf{SQL Injection (SQLi)}: sfrutta le vulnerabilit\`{a} 
+                nelle query del database per accedere o modificare i dati.
+            \end{itemize}
+        \end{itemize}
+        
+        \item \textbf{Sfruttamento}:
+        \begin{itemize}
+            \item Strategie di attacco, movimenti laterali e shell remote.
+            \item Strumenti: 
+            \begin{itemize}
+                \item \textbf{Netcat},
+                \item \textbf{Metasploit},
+                \item \textbf{BeEF}.
+            \end{itemize}
+            \item Tecniche: 
+            \begin{itemize}
+                \item Shell binding,
+                \item reverse shell,
+                \item sfruttamento lato client.
+            \end{itemize}
+        \end{itemize}
+        \item \textbf{Post-Sfruttamento}:
+        \begin{itemize}
+            \item Ottenere persistenza, aumentare i privilegi e mappare la rete 
+            interna.
+            \item Metodi:
+            \begin{itemize}
+                \item creazione di servizi,
+                \item modifica del registro di Windows,
+                \item cracking degli hash delle password.
+            \end{itemize} 
+            \item Strumenti: 
+            \begin{itemize}
+                \item \textbf{moduli Metasploit},
+                \item \textbf{John The Ripper}.
+            \end{itemize}
+        \end{itemize}
+        \item \textbf{Rapporto Finale}:
+        \begin{itemize}
+            \item Presentare risultati, metodologie e piani di correzione.
+            \item Deve includere:
+            \begin{itemize}
+                \item \textbf{sintesi},
+                \item \textbf{metodologia},
+                \item \textbf{risultati},
+                \item \textbf{piano di correzione}.
+            \end{itemize}
+        \end{itemize}
+    \end{enumerate}
+    
+\end{enumerate}
+
+
+
+
+\section{Strumenti Chiave}
+\begin{itemize}
+    \item \textbf{Nmap}: scansione e enumerazione della rete.
+    \item \textbf{Wireshark}: analisi del traffico di rete.
+    \item \textbf{Netcat}: banner grabbing, shell binding e comunicazione di rete.
+    \item \textbf{Virtualbox, QEMU, Docker}: creazione e gestione di ambienti virtuali.
+    \item \textbf{Metasploit}: framework per exploitation e post-exploitation.
+    \item \textbf{OpenVAS}: scansione automatica delle vulnerabilit\`{a}'.
+    \item \textbf{John The Ripper}: cracking degli hash delle password. 
+\end{itemize}
+
+
+\section{Considerazioni sulla Valutazione delle Vulnerabilit\`{a}}
+\begin{itemize}
+    \item Le vulnerabilit\`{a} possono essere identificate automaticamente, 
+    manualmente tramite database o tramite conoscenza del dominio.
+    \item Gli scanner automatici possono tralasciare vulnerabilit\`{a} dipendenti 
+    dall'applicazione, come XSS memorizzato.
+    \item \textbf{Cross-Site Scripting (XSS)}: sfrutta l'input dell'utente per 
+    iniettare script dannosi.
+    \item \textbf{SQL Injection (SQLi)}: sfrutta le vulnerabilit\`{a} nelle query 
+    del database per accedere o modificare i dati. Tecniche Blind SQLi possono 
+    estrarre informazioni senza output diretto. 
+\end{itemize}
+
+
+\section{Conclusione}
+Il materiale del corso fornisce una panoramica completa del penetration testing, 
+dai concetti di rete alle tecniche di exploitation. Sottolinea l'esperienza 
+pratica e un approccio strutturato all'apprendimento.
+
+\end{document}

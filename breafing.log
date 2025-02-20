@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.29)  19 FEB 2025 19:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.29)  20 FEB 2025 14:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/simonecappabianca/Documents/University/PT_2024/test.tex
-(/Users/simonecappabianca/Documents/University/PT_2024/test.tex
+**/Users/simonecappabianca/Documents/University/PT_2024/breafing.tex
+(/Users/simonecappabianca/Documents/University/PT_2024/breafing.tex
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
 (/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
@@ -272,33 +272,8 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 File: l3backend-pdftex.def 2023-11-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count292
 \l__pdf_internal_box=\box55
-) (test.aux
-
-LaTeX Warning: Label `shell' multiply defined.
-
-
-LaTeX Warning: Label `shell' multiply defined.
-
-
-LaTeX Warning: Label `shell' multiply defined.
-
-
-LaTeX Warning: Label `shell' multiply defined.
-
-
-LaTeX Warning: Label `shell' multiply defined.
-
-
-LaTeX Warning: Label `shell' multiply defined.
-
-
-LaTeX Warning: Label `shell' multiply defined.
-
-
-LaTeX Warning: Label `shell' multiply defined.
-
-)
-\openout1 = `test.aux'.
+) (breafing.aux)
+\openout1 = `breafing.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
@@ -338,9 +313,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 17.
- (test.out) (test.out)
+ (breafing.out) (breafing.out)
 \@outlinefile=\write3
-\openout3 = `test.out'.
+\openout3 = `breafing.out'.
 
 \c@lstlisting=\count299
 LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
@@ -352,164 +327,40 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map}] (test.toc)
+{/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map}] (breafing.toc)
 \tf@toc=\write4
-\openout4 = `test.toc'.
+\openout4 = `breafing.toc'.
 
- [2]
-Overfull \hbox (2.21538pt too wide) in paragraph at lines 25--28
-\OT1/cmr/m/n/12 Per il caso speci-fico non ^^Se nec-es-sario ef-fet-tuare nes-suna rac-colta d'informazioni
- []
-
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 62.
-(/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/omscmr.fd
-File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
-
-Overfull \hbox (43.62386pt too wide) in paragraph at lines 78--79
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ [2] [3] [4] [5] [6] [7]
+Overfull \hbox (67.28137pt too wide) in paragraph at lines 270--272
+[]\OT1/cmr/m/n/12 Gli scan-ner au-to-matici pos-sono tralas-ciare vul-ner-a-bilit^^Ra dipen-denti dall'applicazione,
  []
 
 
-Overfull \hbox (65.62383pt too wide) in paragraph at lines 79--80
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (6.7998pt too wide) in paragraph at lines 274--277
+[]\OT1/cmr/bx/n/12 SQL In-jec-tion (SQLi)\OT1/cmr/m/n/12 : sfrutta le vul-ner-a-bilit^^Ra nelle query del database
  []
 
-[3]
-Overfull \hbox (109.62376pt too wide) in paragraph at lines 106--107
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (78.8238pt too wide) in paragraph at lines 124--125
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 142.
-(/Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <6> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 142.
- [4]
-Overfull \hbox (105.22377pt too wide) in paragraph at lines 147--148
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (56.82384pt too wide) in paragraph at lines 166--167
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (74.42381pt too wide) in paragraph at lines 167--168
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (78.8238pt too wide) in paragraph at lines 200--201
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 237--241
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--244
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 244--246
-
- []
-
-[6]
-LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 265.
-LaTeX Font Info:    No file OMScmtt.fd. on input line 265.
-
-
-LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 265.
-
-
-Overfull \hbox (52.92491pt too wide) in paragraph at lines 262--266
-\OT1/cmtt/m/n/12 then(response => response.text()).then(data => alert(data))\OMS/cmtt/m/n/12 g\OT1/cmtt/m/n/12 test(); 
- []
-
-
-Overfull \hbox (3.69987pt too wide) in paragraph at lines 266--268
-\OT1/cmtt/m/n/12 ' or null is null INTO OUTFILE '/var/www/html/USERS.txt' # 
- []
-
-
-Overfull \hbox (43.46689pt too wide) in paragraph at lines 268--273
-\OT1/cmtt/m/n/12 ' or null is not null UNION SELECT null, TABLE[]NAME, TABLE[]SCHEMA 
- []
-
-
-Overfull \hbox (72.6129pt too wide) in paragraph at lines 268--273
-\OT1/cmtt/m/n/12 'information[]schema' AND TABLE[]SCHEMA not like 'mysql' AND TABLE[]SCHEMA 
- []
-
-
-Overfull \hbox (63.7209pt too wide) in paragraph at lines 268--273
-\OT1/cmtt/m/n/12 not like 'performance[]schema' INTO OUTFILE '/var/www/html/TABLES.txt'
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 275--278
-
- []
-
-<USERS.png, id=214, 457.71pt x 251.94125pt>
-File: USERS.png Graphic file (type png)
-<use USERS.png>
-Package pdftex.def Info: USERS.png  used on input line 280.
-(pdftex.def)             Requested size: 366.1685pt x 201.55327pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<TABLES.png, id=216, 457.71pt x 191.71625pt>
-File: TABLES.png Graphic file (type png)
-<use TABLES.png>
-Package pdftex.def Info: TABLES.png  used on input line 285.
-(pdftex.def)             Requested size: 366.1685pt x 153.3732pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7] [8 <./USERS.png> <./TABLES.png>] (test.aux)
+[8] [9] (breafing.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
  ***********
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `test.out' has not changed.
-(rerunfilecheck)             Checksum: F046523578643D48F7EF811A82679C95;775.
+Package rerunfilecheck Info: File `breafing.out' has not changed.
+(rerunfilecheck)             Checksum: 23B3A744386E48D7D839FCFB27F3BAB3;895.
  ) 
 Here is how much of TeX's memory you used:
- 11939 strings out of 474587
- 184473 string characters out of 5731584
- 2003555 words of memory out of 5000000
- 33815 multiletter control sequences out of 15000+600000
- 564539 words of font info for 60 fonts, out of 8000000 for 9000
+ 11462 strings out of 474587
+ 179072 string characters out of 5731584
+ 1934555 words of memory out of 5000000
+ 33483 multiletter control sequences out of 15000+600000
+ 562515 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,313b,2049s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0600.pk> </Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on test.pdf (8 pages, 188002 bytes).
+ 75i,6n,79p,415b,733s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on breafing.pdf (9 pages, 78122 bytes).
 PDF statistics:
- 320 PDF objects out of 1000 (max. 8388607)
- 169 named destinations out of 1000 (max. 500000)
- 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 122 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -125,22 +125,85 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 6.38 seconds            
             \end{lstlisting}
             \begin{lstlisting}[label=shell, basicstyle=\tiny]
-# telnet 172.19.0.3 80
 Trying 172.19.0.3...
 Connected to 172.19.0.3.
 Escape character is '^]'.
-HEAD / HTTP/1.1
+GET / HTTP/1.1
 HOST: 172.19.0.3
-HTTP/1.1 408 Request Timeout
-Date: Sat, 08 Feb 2025 18:50:04 GMT
-Server: Apache/2.4.38 (Debian)
-Connection: close
-Content-Type: text/html; charset=iso-8859-1
 
-Connection closed by foreign host.                
+HTTP/1.1 200 OK
+Date: Wed, 19 Feb 2025 15:01:38 GMT
+Server: Apache/2.4.38 (Debian)
+X-Powered-By: PHP/7.2.34
+Vary: Accept-Encoding
+Content-Length: 903
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Michelangelo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <style type="text/css">
+        body{ font: 14px sans-serif; text-align: center; }
+    </style>
+</head>
+    <body style="background-color:#f3f3f3;">
+    <div>
+        <div class="page-header">
+        <img src="/mic.png" alt="Michelangelo" width="10%">
+        <h1>
+            Michelangelo
+        </h1>
+        </div>
+        <div>
+        <div>
+            <p>
+                <h2>We are a peaceful, honest car dealer</h2>
+            </p>
+            <p>
+                <a href="./login.php" class="btn btn-primary">Enter your private area</a>
+                <a href="./catalog.php" class="btn btn-primary">Check our vehicle catalog</a>
+            </p>
+        </div>
+        </div>
+    </div>
+    </body>
+</html>
+Connection closed by foreign host.
             \end{lstlisting}
             \item \textbf{UserDir Enumeration}:
-            \item \textbf{Metasploit}:   
+            \begin{lstlisting}[label=shell, basicstyle=\tiny]
+# nmap --script=http-userdir-enum -p 80 172.19.0.3
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-02-19 15:28 UTC
+Nmap scan report for penetrated.test_network (172.19.0.3)
+Host is up (0.000039s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+MAC Address: 02:42:AC:13:00:03 (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.18 seconds
+
+# nmap -sV --script=http-php-version -p 80 172.19.0.3
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-02-19 18:38 UTC
+Nmap scan report for penetrated.test_network (172.19.0.3)
+Host is up (0.000035s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.38 ((Debian))
+|_http-php-version: Version from header x-powered-by: PHP/7.2.34
+|_http-server-header: Apache/2.4.38 (Debian)
+MAC Address: 02:42:AC:13:00:03 (Unknown)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 6.38 seconds
+            \end{lstlisting} 
+            \item \textbf{Metasploit}: 
+            \begin{lstlisting}[label=shell, basicstyle=\tiny]
+
+            \end{lstlisting}  
         \end{itemize}
 
         \item \textbf{Strumenti utilizzati}:

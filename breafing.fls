@@ -1,7 +1,7 @@
 PWD /Users/simonecappabianca/Documents/University/PT_2024
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt
-INPUT /Users/simonecappabianca/Documents/University/PT_2024/test.tex
-OUTPUT test.log
+INPUT /Users/simonecappabianca/Documents/University/PT_2024/breafing.tex
+OUTPUT breafing.log
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size12.clo
@@ -118,10 +118,10 @@ INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/mathcolor.ltx
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
-INPUT ./test.aux
-INPUT ./test.aux
-INPUT test.aux
-OUTPUT test.aux
+INPUT ./breafing.aux
+INPUT ./breafing.aux
+INPUT breafing.aux
+OUTPUT breafing.aux
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
@@ -130,14 +130,14 @@ INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
-INPUT ./test.out
-INPUT ./test.out
-INPUT test.out
-INPUT test.out
-OUTPUT test.pdf
-INPUT ./test.out
-INPUT ./test.out
-OUTPUT test.out
+INPUT ./breafing.out
+INPUT ./breafing.out
+INPUT breafing.out
+INPUT breafing.out
+OUTPUT breafing.pdf
+INPUT ./breafing.out
+INPUT ./breafing.out
+OUTPUT breafing.out
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr17.tfm
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr12.tfm
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi12.tfm
@@ -159,61 +159,20 @@ INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr17.tfm
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
-INPUT ./test.toc
-INPUT ./test.toc
-INPUT test.toc
+INPUT ./breafing.toc
+INPUT ./breafing.toc
+INPUT breafing.toc
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
-OUTPUT test.toc
+OUTPUT breafing.toc
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/tcrm1200.tfm
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr6.tfm
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/tcrm0600.tfm
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/omscmr.fd
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/omscmr.fd
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/omscmr.fd
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy6.tfm
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/omlcmr.fd
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/omlcmr.fd
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/omlcmr.fd
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi6.tfm
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmti12.tfm
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmtt12.tfm
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy10.tfm
-INPUT ./USERS.png
-INPUT ./USERS.png
-INPUT ./USERS.png
-INPUT ./USERS.png
-INPUT ./USERS.png
-INPUT ./USERS.png
-INPUT ./USERS.png
-INPUT ./TABLES.png
-INPUT ./TABLES.png
-INPUT ./TABLES.png
-INPUT ./TABLES.png
-INPUT ./TABLES.png
-INPUT ./TABLES.png
-INPUT ./TABLES.png
-INPUT test.aux
-INPUT ./test.out
-INPUT ./test.out
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0600.pk
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0600.pk
+INPUT breafing.aux
+INPUT ./breafing.out
+INPUT ./breafing.out
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb
-INPUT /Users/simonecappabianca/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb
