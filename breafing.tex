@@ -108,10 +108,21 @@ incoraggiando un approccio pratico all'apprendimento della sicurezza. Il corso
         \end{enumerate} 
         Il \textbf{Session layer} e \textbf{Presentation layer} non sono molto 
         rilevanti hai fine del corso.
+        \item Segmentazione della reta:
+        \begin{itemize}
+            \item \textbf{LAN} (\textbf{Local Area Network}): rete locale (rete 
+            aziendal),
+            \item \textbf{WAM} (\textbf{Wide Area Network}): rete esterna 
+            (internel),
+            \item \textbf{DMZ} (\textbf{DeMilitarized Zone}): in quest'area 
+            risiedono servizi che, pur essendo "interni", sono esposti al
+            mondo esterno, proprio per i rischi impliciti, DMZ e LAN dovrebbero
+            avere livelli di sicurezza diversi ed essere adeguatamente protetti.
+        \end{itemize}
         \item Componenti chiave della rete:
         \begin{itemize}
-            \item \textbf{Indirizzi MAC}: identificano univocamente i dispositivi 
-            in una LAN.
+            \item \textbf{Indirizzi MAC} (\textbf{Media Access Controll}): 
+            identificano univocamente i dispositivi in una LAN.
             \item \textbf{Indirizzi IP}: identificano i dispositivi su una rete 
             e sono usati per la comunicazione su reti IP; possono essere privati 
             o pubblici.
@@ -120,28 +131,48 @@ incoraggiando un approccio pratico all'apprendimento della sicurezza. Il corso
             tramite la \textit{ARP Table}, questo \`{e} un protocollo 
             \textbf{cross-layer} (data link + network).
             \item \textbf{NAT} (\textbf{Network Address Translation}): traduce 
-            gli indirizzi IP \textbf{privati} in indirizzi IP \textbf{pubblici} 
+            gli indirizzi \textit{IP privati} in indirizzi \textit{IP pubblici} 
             per l'accesso a Internet.
-            \item \textbf{DNS}: traduce i nomi di dominio in indirizzi IP.
-            \item \textbf{DHCP}: assegna automaticamente gli indirizzi IP.
+            \item \textbf{DNS} (\textbf{Domain Name System}): traduce i nomi di 
+            dominio in indirizzi IP.
+            \item \textbf{DHCP} (\textbf{Dynamic Host Configuration Protocol}): 
+            qusto protoollo assegna automaticamente tutti i parametri attraverso
+            un server centrale che gestisce tutta la rete, un \textbf{DHCP} pu\`{o}
+            generare due tipi di paccheti:
+            \begin{itemize}
+                \item \textbf{DHCPDISCOVER}: il PC che ha bisogno di un IP address
+                spedisce questo pacchetto in broadcast sperando che il server DHCP 
+                lo riceva,
+                \item \textbf{DHCPOFFER}: quando il DHCP server riceve un pacchetto
+                \textbf{DHCPDISCOVER} prova a soddisfare la richiesta spedendo
+                un pacchetto \textbf{DHCPOFFER} con tutti i parametri necessari 
+                per la configurazione.
+            \end{itemize} 
             \item \textbf{Porte e Servizi}: usate per stabilire connessioni con 
             l'esterno e sono collegate ai servizi eseguiti su porte specifiche. 
         \end{itemize}
         \item Dispositivi di rete:
         \begin{itemize}
-            \item \textbf{Switch}: operano all'interno di subnet usando indirizzi 
-            MAC.
-            \item \textbf{Router}: inoltrano pacchetti tra reti diverse usando 
-            indirizzi IP.
-            \item \textbf{Firewall}: proteggono la rete applicando policy di 
-            sicurezza.
+            \item \textbf{Switch}: Lo switch si basa sugli indirizzi MAC e 
+            funziona all'interno di una specifica subnet. All'interno di una 
+            subnet possiamo trovare uno o pi\`{u} switch.(ARP)
+            \item \textbf{Router}: La funzione del router \`{e} quella di
+            trasportare i pacchetti fuori dalla sottorete da cui provengono usando 
+            gli indirizzi IP. (NAT)
+            \item \textbf{Firewall}: Il firewall non \`{e} altro che un
+            router con funzionalit\`{a} di sicurezza avanzate. Per convenzione,
+            posizioniamo il firewall tra l'estremit\`{a} superiore del 
+            \textit{Data link Layer} e l'estremit\`{a} inferiore del 
+            \textit{Network layer}.
         \end{itemize}
         \item Strumenti di analisi di rete:
         \begin{itemize}
             \item \textbf{Wireshark}: analizza il traffico di rete catturando 
             pacchetti.
             \item \textbf{ARP, PING, Traceroute}: identificano problemi di 
-            connettivit\`{a}. 
+            connettivit\`{a}, \textbf{ARP} lavora tra \textit{Data Link Layer} 
+            (MAC Address) e \textit{Network Layer} (IP address) mentre 
+            \textbf{PING} lavora sul \textit{Network Layer} (IP address).
         \end{itemize}
     \end{itemize}
     \item \textbf{Fasi del Penetration Testing in Dettaglio}
@@ -149,21 +180,29 @@ incoraggiando un approccio pratico all'apprendimento della sicurezza. Il corso
         \item \textbf{Raccolta di Informazioni}:
         \begin{itemize}
             \item Raccogliere pi\`{u} informazioni possibili sull'obiettivo, 
-            dal business agli strumenti utilizzati.
+            dal business agli strumenti utilizzati , dai fornitori, etc \dots
             \item Tecniche:
             \begin{itemize}
                 \item \textbf{Google Dorking}: Utilizzo di operatori di ricerca 
                 specifici per trovare informazioni sensibili.
                 \item \textbf{Wayback Machine}: Per trovare dati storici.
                 \item \textbf{Analisi dei social media}: Per individuare perdite 
-                di informazioni.
-                \item \textbf{Estrazione di metadati}: Dai file.
-                \item \textbf{Query WHOIS}: Per informazioni sui domini.
+                di informazioni (annunci di lavoro con le tecnomigia utilizzate).
+                \item \textbf{Estrazione di metadati}: Un metadato non \`{e} 
+                altro che informazioni aggiuntive inserite nel documento e pu\`{o}
+                svolgere diversi scopi. (\textit{ExifTool}).
+                \item \textbf{Query WHOIS}: Per informazioni sui domini. (\textit{WHOIS})
                 \item \textbf{Query DNS}: Per la mappatura della rete.
                 \item \textbf{Maltego e Recon-ng}: Strumenti per automatizzare 
                 la raccolta dati.
-                \item \textbf{Shodan}: Per l'analisi delle vulnerabilit\`{a}.
-            \end{itemize} 
+                \item \textbf{Shodan}: \`{e} un potente motore di ricerca che ci 
+                consente di trovare vulnerabilit\`{a} ed errori di configurazione 
+                sui dispositivi esposti su Internet.
+            \end{itemize}
+            \item Strumenti utilizzati:
+            \begin{itemize}
+                \item ...
+            \end{itemize}
         \end{itemize}
         
         \item \textbf{Scansione della Rete}:
@@ -176,7 +215,10 @@ incoraggiando un approccio pratico all'apprendimento della sicurezza. Il corso
                 \item \textbf{TCP Scanning}: include TCP Connect e SYN scans.
                 \item \textbf{UDP Scanning}: identifica porte e servizi UDP aperti. 
             \end{itemize}
-            \item Strumento: \textbf{Nmap}.
+            \item Strumenti:
+            \begin{itemize}
+                \item \textbf{Nmap}.
+            \end{itemize} 
         \end{itemize}
         \item \textbf{Banner Grabbing}:
         \begin{itemize}
@@ -220,7 +262,7 @@ incoraggiando un approccio pratico all'apprendimento della sicurezza. Il corso
                 \item \textbf{OpenVAS},
                 \item \textbf{OWASP ZAP}.
             \end{itemize}
-            \item Tipi di vulnerabilit\`{a}':
+            \item Tipi di vulnerabilit\`{a}:
             \begin{itemize}
                 \item \textbf{Cross-Site Scripting (XSS)}: sfrutta l'input 
                 dell'utente per iniettare script malevoli.
